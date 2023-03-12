@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="Enceinte/haut-parleur-gris-et-icone-sonore.ico">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+    <div class="container-navigation">
+		<div class="navigation-left">
+				<h1>J.CHAVAS</h1>
+		</div>
+		<div class="navigation-middle">
+			<nav role="navigation" class="nav-menu w-nav-menu" style="transform: translateY(0px) translateX(0px);">
+				<a href = "index.html" class ="nav-link w-nav-link w--current"> Accueil</a>
+				<a href = "CV.html" class ="nav-link w-nav-link"> Curiculum vitae</a>
+				<a href = "Creation.html" class ="nav-link w-nav-link "> Mes créations</a>
+				<div class="navbar-mobile-button-wrapper">
+                    <a href="#" class="button-primary w-button">Login</a>
+                </div>
+			</nav>
+		</div>
+		<div class="navigation-right">
+			<div class="navigation-button-wrap">
+				<button class="button-primary" data-wf-user-logout="Log out" data-wf-user-login="Log in" type="button">GitHub</button>
+			</div>
+			<div class="menu-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
+				<div class="w-icon-nav-menu"></div>
+			</div>
+		</div>
+	</div>
+	<div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0" style="display: none;"></div>
+	</div>
+
+    <section>
+      <div class="bg_pres">
+        <div class="container-regular">
+          <div class="presentation">
+            <h3 class="title"> Ma présentation : </h3>
+            <h4> Qui suis-je ? </h4>
+                  <p>
+                      Bonjour, je m'appelle Julien CHAVAS, je suis un étudiant en dernière année d'école d'ingénieur à Télécom Saint-Étienne en parcour Électronique et Télécommunication.
+              Je suis passé par la case IUT avant cette école, avec un DUT Génie Électrique et Informatique Industrielle (GEII).
+              Je suis un passioné d'électronique, ma passion est de fabriquer des enceintes connectées. Donc de la conception électronique, à la conception et le travail du bois majoritairement. 
+              Je suis aussi un joueur membre d'une structure [IRAE], prenant de multiples casquette de joueur, à commentateur et jusqu'à hébergeur de serveur de jeu.
+                </p>
+            <h4> D'ou je viens ? </h4>
+                  <p>
+                    Je suis originaire de la campagne de Loire-Sur-Rhône dans le Rhone, Le PACALON.              
+                </p>
+            
+        </div>
+      </div>
+    </div>
+
+    <div class="container-regular">
+      <div class="presentation">
+        <h3 class="title"> La présentation du site : </h3>
+          <h4> Présentation </h4>
+          <p>
+          Ce site web à été dévelloper en première année d'école d'ingénieur en temps que projet décourverte des langages de programmation du web. Il n'est donc pas d'une complixité extreme.
+          Cette page est l'accueil, elle possède un formulaire de conctact (pour l'instant factice).
+          On peut retrouver un menu en haut qui permet de naviguer entre les pages du site.
+          </p>
+        <h4> Curiculum Vitae </h4>
+          <p>
+          Ensuite, nous avons la page de mon CV réécrit en HTML. (à mettre à jour)
+          </p>
+        <h4> Ressources </h4>
+          <p>
+          Cette page est plus ici sous la forme d'un test, pour afficher tout type de chose. Comme une vidéo, des liens de téléchargement, 
+          un affichage de code (va êtres modifié pour montrer mes différents projets réalisés au seins de mon parcour scolaire)
+          </p>
+        <h4> Mes créations </h4>
+          <p>
+          Cette page regroupe toutes mes créations personnelles récentes. (à mettre à jour)
+          </p>
+      </div>
+  </div>
+    </section>
+
+	
+    <section>
+      <div class="bg_black">
+        <div class="conteneur">
+      <div class="container-regular">
+        <h2 class="title"> Aperçu </h2> 
+          <div id="gallery">
+            <img class="myImages" id="myImg" src="Enceinte/3.jpg">
+            <img class="myImages" id="myImg" src="Enceinte/22.jpg">
+            <img class="myImages" id="myImg" src="Enceinte/7.jpg">
+            <img class="myImages" id="myImg" src="Enceinte/2.jpg">
+            <img class="myImages" id="myImg" src="images/yuu.jpg">
+          </div>
+      </div>
+      </div>
+    
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+        </div>
+
+      </div>
+    
+      </section>
+    
+      <script>
+        // create references to the modal...
+        var modal = document.getElementById('myModal');
+        // to all images -- note I'm using a class!
+        var images = document.getElementsByClassName('myImages');
+        // the image in the modal
+        var modalImg = document.getElementById("img01");
+        // and the caption in the modal
+        var captionText = document.getElementById("caption");
+    
+        // Go through all of the images with our custom class
+        for (var i = 0; i < images.length; i++) {
+        var img = images[i];
+        // and attach our click listener for this image.
+        img.onclick = function(evt) {
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        }
+    
+        var span = document.getElementsByClassName("close")[0];
+    
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+        </script>
+
+	<footer>
+	
+		<p>
+		| Copyright © Julien CHAVAS 2022 |
+		</p>
+	
+    </footer>
+	
+	
+
+</body>
+
+</html>
