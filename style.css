@@ -325,7 +325,7 @@ nav  a{ /* tous les liens a à l'intérieur de la balise nav */
   }
 
 .button-primary {
-  background-color: #1473e6;
+  background-color: #3f3f3f;
 }
 
 .nav-link.w--current {
@@ -337,3 +337,6 @@ nav  a{ /* tous les liens a à l'intérieur de la balise nav */
   padding-bottom: 20px;
 }
 
+.menu-button.w--open {
+  background-color: #1473e6;
+}
