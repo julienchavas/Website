@@ -56,11 +56,19 @@ footer{
 	/*padding-top : 10px;
 	padding-bottom : 10px;*/
 	color : white;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bg_black p{
+  color: white;
 }
 
 .bg_pres{
 	background: #a2daff;
 	color : rgb(0, 0, 0);
+
 }
 
 .conteneur{
@@ -146,6 +154,11 @@ footer{
 .Ec ul{
 	flex : 1;
 }
+
+.box{
+  flex : 1;
+}
+
 
 
 
@@ -339,4 +352,47 @@ nav  a{ /* tous les liens a à l'intérieur de la balise nav */
 
 .menu-button.w--open {
   background-color: #1473e6;
+}
+
+/* button */
+
+.styled_git{
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(121, 121, 121);
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  
+}
+
+.styled_git:hover {
+  background-color: rgb(190, 190, 190);
+}
+
+.styled_git:active {
+  background-color: rgb(255, 255, 255);
+}
+
+
+.styled_lin{
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(0, 97, 207);
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  
+}
+
+.styled_lin:hover {
+  background-color: rgb(101, 207, 248);
+}
+
+.styled_lin:active {
+  background-color: rgb(194, 251, 255);
 }
